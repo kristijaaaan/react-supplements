@@ -25,7 +25,7 @@ function CreateOrder() {
         <div className="flex flex-col gap-2">
           <label className="font-semibold">Full Name</label>
           <input
-            className="h-9 w-full rounded-full px-4"
+            className="h-9 w-full rounded-full border-2 border-gray-400 px-4"
             type="text"
             name="customer"
             defaultValue={username}
@@ -37,7 +37,7 @@ function CreateOrder() {
           <label className="font-semibold">Phone number</label>
           <div>
             <input
-              className="h-9 w-full rounded-full px-4"
+              className="h-9 w-full rounded-full border-2 border-gray-400 px-4"
               type="tel"
               name="phone"
               required
@@ -49,7 +49,7 @@ function CreateOrder() {
           <label className="font-semibold">Address</label>
           <div>
             <input
-              className="h-9 w-full rounded-full px-4"
+              className="h-9 w-full rounded-full border-2 border-gray-400 px-4"
               type="text"
               name="address"
               required
@@ -57,11 +57,12 @@ function CreateOrder() {
           </div>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex items-center gap-2">
           <input
             type="checkbox"
             name="priority"
             id="priority"
+            className="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600"
             // value={withPriority}
             // onChange={(e) => setWithPriority(e.target.checked)}
           />

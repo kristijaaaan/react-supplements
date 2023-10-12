@@ -5,8 +5,8 @@ function EmptyCart() {
     <div className="mt-6 px-6">
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
 
-      <p className="mt-6 text-xl font-bold">
-        Your cart is still empty. Start adding some items :)
+      <p className="mt-6 w-full text-xl font-bold">
+        Your cart is empty. Start adding some items :)
       </p>
     </div>
   );

@@ -27,20 +27,22 @@ function Order() {
       >
         &larr; Back to menu
       </Link>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-3">
         <span>{priority ? 'PRIORITY ORDER' : 'REGULAR ORDER'}</span>
-        <span className="font-semibold">Order #: {id}</span>
+        <span className="w-28 text-right font-semibold">Order #: {id}</span>
       </div>
 
       <div className="flex flex-col gap-4 bg-gray-200 p-4">
         <span>
-          Customers name: <br /> {customer}
+          Customers name: <br />
+          <span className="font-semibold">{customer}</span>
         </span>
         <span>
-          Customers phone: <br /> {phone}
+          Customers phone: <br /> <span className="font-semibold">{phone}</span>
         </span>
         <span>
-          Delivery address: <br /> {address}
+          Delivery address: <br />
+          <span className="font-semibold">{address}</span>
         </span>
       </div>
 
@@ -51,10 +53,17 @@ function Order() {
       </ul>
 
       <div className="flex flex-col gap-3 bg-gray-200 p-4">
-        <span>Cart prize: {totalPrice}.00 RSD</span>
-        <span>Priority price: 500.00 RSD</span>
+        <span>
+          <p>Cart prize:</p>
+          <p>{totalPrice}.00 RSD</p>
+        </span>
+        <span>
+          <p>Priority price:</p>
+          <p>500.00 RSD</p>
+        </span>
         <span className="text-lg font-semibold">
-          Total price: {totalPrice + 500}.00 RSD
+          <p>Total price:</p>
+          <p>{totalPrice + 500}.00 RSD</p>
         </span>
       </div>
     </div>

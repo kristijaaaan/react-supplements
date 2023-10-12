@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import CartOverview from '../features/cart/CartOverview';
 import Header from './Header';
 import Sidebar from './Sidebar';
 

@@ -18,7 +18,7 @@ function CartOverview() {
         <ImCart className="text-xl" />
         <span className="text-xl">{totalCartItems}</span>
       </div>
-      <span className="text-lg">{totalCartPrice}.00 RSD</span>
+      <span className="text-md">{totalCartPrice}.00 RSD</span>
     </Link>
   );
 

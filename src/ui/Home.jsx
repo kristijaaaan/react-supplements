@@ -6,7 +6,7 @@ function Home() {
   const username = useSelector((state) => state.user.username);
 
   return (
-    <div className="my-20 flex flex-col gap-10 px-4 text-center">
+    <div className="my-32 flex flex-col gap-10 px-4 text-center">
       <div>
         <h1 className="mb-4 text-3xl font-bold">🧪React Supplements</h1>
         <span className="text-xl font-semibold leading-3 text-sky-400">

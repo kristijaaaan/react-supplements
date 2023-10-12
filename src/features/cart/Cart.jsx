@@ -21,13 +21,13 @@ function Cart() {
         Your cart, {username[0].toUpperCase() + username.slice(1)}
       </h2>
 
-      <ul className="mt-3 divide-y divide-stone-200 border-b">
+      <ul className="mt-5 divide-y divide-stone-200 border-b">
         {cart.map((item) => (
           <CartItem item={item} key={item.id} />
         ))}
       </ul>
 
-      <div className="mt-6 space-x-2">
+      <div className="mt-6 flex w-36 flex-col items-start justify-center gap-3">
         <Link
           to="/order/new"
           className="inline-block rounded-full bg-sky-300 px-3 py-2 text-sm font-semibold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200 disabled:cursor-not-allowed"

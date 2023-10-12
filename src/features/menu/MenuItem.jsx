@@ -29,10 +29,10 @@ function MenuItem({ item }) {
         alt={name}
         className={`h-28 ${soldOut ? 'opacity-70 grayscale' : ''}`}
       />
-      <div className="flex flex-col gap-2 sm:w-full">
-        <p className="text-center font-medium sm:text-left">{name}</p>
+      <div className="flex flex-col gap-2.5 sm:w-full">
+        <p className="text-md text-center font-medium sm:text-left">{name}</p>
         <p className="text-xs italic text-gray-500">{description}</p>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center justify-between gap-2">
           {!soldOut ? (
             <p className="text-sm font-semibold">{price}.00 RSD</p>
           ) : (
@@ -44,7 +44,7 @@ function MenuItem({ item }) {
           {currentCartQuantity ? (
             <div>
               <button
-                className="text-md inline-block rounded-full bg-sky-300 px-2 py-1 font-bold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200"
+                className="inline-block rounded-full bg-sky-300 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200"
                 onClick={() => dispatch(decreaseItemQuantity(id))}
               >
                 -
@@ -53,7 +53,7 @@ function MenuItem({ item }) {
                 {currentCartQuantity}
               </span>
               <button
-                className="text-md inline-block rounded-full bg-sky-300 px-2 py-1 font-bold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200"
+                className="inline-block rounded-full bg-sky-300 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200"
                 onClick={() => dispatch(increaseItemQuantity(id))}
               >
                 +
