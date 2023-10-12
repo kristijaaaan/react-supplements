@@ -11,7 +11,7 @@ function CartItem({ item }) {
       <p className="mb-1 text-xl">
         {quantity} &times; {name}
       </p>
-      <div className="flex flex-col items-start justify-between gap-3">
+      <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
         <p className="text-md font-semibold">{price * quantity}.00 RSD</p>
         <Button onClick={() => dispatch(deleteItem(id))}>Delete</Button>
       </div>

@@ -27,7 +27,7 @@ function Cart() {
         ))}
       </ul>
 
-      <div className="mt-6 flex w-36 flex-col items-start justify-center gap-3">
+      <div className="mt-6 flex w-36 flex-col items-start justify-center gap-3 sm:w-72 sm:flex-row sm:justify-start">
         <Link
           to="/order/new"
           className="inline-block rounded-full bg-sky-300 px-3 py-2 text-sm font-semibold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200 disabled:cursor-not-allowed"
