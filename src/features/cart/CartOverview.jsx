@@ -21,18 +21,6 @@ function CartOverview() {
       <span className="text-md">{totalCartPrice}.00 RSD</span>
     </Link>
   );
-
-  // return (
-  //   <div className="flex flex-col items-center px-4 py-4 text-sm uppercase text-gray-700 sm:px-6 md:text-base">
-  //     <Link to="/cart" className="flex">
-  //       <ImCart />
-  //       <span>{totalCartItems}</span>
-  //     </Link>
-  //     <p className="space-x-4 font-semibold text-gray-700 sm:space-x-6">
-  //       <span>{totalCartPrice}.00 RSD</span>
-  //     </p>
-  //   </div>
-  // );
 }
 
 export default CartOverview;

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Form, redirect } from 'react-router-dom';
 import { createOrder } from '../../services/apiShop';
@@ -6,14 +5,7 @@ import Button from '../../ui/Button';
 import store from '../../store';
 import { clearCart } from '../cart/cartSlice';
 
-// https://uibakery.io/regex-library/phone-number
-const isValidPhone = (str) =>
-  /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
-    str,
-  );
-
 function CreateOrder() {
-  // const [withPriority, setWithPriority] = useState(false);
   const cart = useSelector((state) => state.cart.cart);
   const username = useSelector((state) => state.user.username);
 
@@ -63,8 +55,6 @@ function CreateOrder() {
             name="priority"
             id="priority"
             className="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600"
-            // value={withPriority}
-            // onChange={(e) => setWithPriority(e.target.checked)}
           />
           <label htmlFor="priority">Want to yo give your order priority?</label>
         </div>

@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Button from '../../ui/Button';
 import LinkButton from '../../ui/LinkButton';
 import CartItem from './CartItem';
 import { clearCart } from './cartSlice';
@@ -18,7 +17,8 @@ function Cart() {
       <LinkButton to="/menu">&larr; Back to menu</LinkButton>
 
       <h2 className="mt-7 text-xl font-semibold">
-        Your cart, {username[0].toUpperCase() + username.slice(1)}
+        Your cart
+        {username ? `, ${username[0].toUpperCase() + username.slice(1)}` : ''}
       </h2>
 
       <ul className="mt-5 divide-y divide-stone-200 border-b">
@@ -40,10 +40,6 @@ function Cart() {
         >
           Clear cart
         </button>
-        {/* <Button to="/order/new">Order now</Button> */}
-        {/* <Button type="clear" onClick={() => dispatch(clearCart())}>
-          Clear cart
-        </Button> */}
       </div>
     </div>
   );

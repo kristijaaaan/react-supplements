@@ -18,7 +18,7 @@ function Home() {
         <div className="flex flex-col items-center justify-center gap-3">
           <span className="text-lg">You are already registered</span>
           <Link
-            to="menu"
+            to="/menu"
             className="inline-block w-48 rounded-full bg-sky-300 px-3 py-2 text-sm font-semibold uppercase tracking-wide text-gray-800 transition-all duration-300 hover:bg-sky-200 disabled:cursor-not-allowed sm:w-64"
           >
             Continue ordering

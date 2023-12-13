@@ -57,13 +57,15 @@ function Order() {
           <p>Cart prize:</p>
           <p>{totalPrice}.00 RSD</p>
         </span>
-        <span>
-          <p>Priority price:</p>
-          <p>500.00 RSD</p>
-        </span>
+        {priority && (
+          <span>
+            <p>Priority price:</p>
+            <p>500.00 RSD</p>
+          </span>
+        )}
         <span className="text-lg font-semibold">
           <p>Total price:</p>
-          <p>{totalPrice + 500}.00 RSD</p>
+          <p>{priority ? totalPrice + 500 : totalPrice}.00 RSD</p>
         </span>
       </div>
     </div>
